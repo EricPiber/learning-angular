@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@plugin "daisyui" {
+  themes: night --default;
+}
+
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Montserrat";
+    src: url('/assets/fonts/montserrat/montserrat-medium.ttf') format('truetype');
+  }
+}
+
+/*
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("ttf");
+} */

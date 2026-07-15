@@ -1,0 +1,8 @@
+<country-search-input (value)="onSearch($event)" placeholder="Buscar por capital" />
+
+<country-list
+  [countries]="countries() ?? []"
+  [errorMessage]="isError()?.toString()"
+  [isEmpty]="countries()?.length === 0"
+  [isLoading]="this.isLoading()"
+/>
